@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Pagina web</title>
+  <title>GeekURL</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript, IPHONE, GEEK,IOS,ANDROID">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
- 
+  <script src="js/Myscript.js"></script>
 </head>
-<body>
- 
+<body  onload="setbackground();">
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -19,25 +19,38 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Sitio Web</a>
+      <a class="navbar-brand" href="Index.html">GeekURL.com</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="Index.html">Inicio</a></li>
-        <li><a href="op1.html">Opci&oacute;n 1</a></li>
-        <li><a href="op2.html">Opci&oacute;n 2</a></li>
-        <li><a href="op3.html">Opci&oacute;n 3</a></li>
-        <li><a href="op4.html">Opci&oacute;n 4</a></li>
+        <li><a href="op1.html">Celulares</a></li>
+        <li><a href="op2.html">Consolas</a></li>
+        <li><a href="op3.html">Gaming</a></li>
+        <li><a href="op4.html">Tecnolog&iacute;a</a></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Estilos
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li onClick="setbackground();"><a href="#">Cambiar Color</a></li>
+                <li onClick="CambioTexto()"><a href="#">Cambiar Tamaño Letra</a></li>
+                <li onClick="CambioTextoLetra()"><a href="#">Cambiar Tipo Letra</a></li>
+            </ul>
+        </li>  
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Acceder</a></li>
+        <li><a href="Registrarse.html"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
+        <li><a href="Acceder.html"><span class="glyphicon glyphicon-log-in"></span> Acceder</a></li>
       </ul>
     </div>
   </div>
 </nav>
-<div class="container">
-  
+<div>
+    Then came the night of the first falling star.
+</div>
+<footer class="page-footer font-small blue pt-4"></footer>
+<div class="footer-copyright text-center py-3">© 2018 Copyright - URL</div>
+</footer>
 </div>
 </body>
 </html>

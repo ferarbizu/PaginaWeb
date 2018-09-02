@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Pagina web</title>
+  <title>GeekURL</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
- 
+  <script src="js/Myscript.js"></script>
+
 </head>
-<body>
+<body   onload="setbackground();">
  
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -19,19 +20,28 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="Index.html">Sitio Web</a>
+      <a class="navbar-brand" href="Index.html">GeekURL.com</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="Index.html">Inicio</a></li>
-        <li class="active"><a href="op1.html">Opci&oacute;n 1</a></li>
-        <li><a href="op2.html">Opci&oacute;n 2</a></li>
-        <li><a href="op3.html">Opci&oacute;n 3</a></li>
-        <li><a href="op4.html">Opci&oacute;n 4</a></li>
+        <li class="active"><a href="op1.html">Celulares</a></li>
+        <li><a href="op2.html">Consolas</a></li>
+        <li><a href="op3.html">Gaming</a></li>
+        <li><a href="op4.html">Tecnolog&iacute;a</a></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Estilos
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li onClick="setbackground();"><a href="#">Cambiar Color</a></li>
+                <li onClick="CambioTexto()"><a href="#">Cambiar Tamaño Letra</a></li>
+                <li onClick="CambioTextoLetra()"><a href="#">Cambiar Tipo Letra</a></li>
+            </ul>
+        </li>      
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Acceder</a></li>
+        <li><a href="Registrarse.html"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
+        <li><a href="Acceder.html"><span class="glyphicon glyphicon-log-in"></span> Acceder</a></li>
       </ul>
     </div>
   </div>
@@ -53,10 +63,13 @@
     <div class="col-md-4 col-sm-6.col-xs-12">
       <div class="panel panel-info">
         <div class="panel-heading">Panel Heading</div>
-            <div class="panel-body">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</div>
+            <div class="panel-body"><p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website or whether you are looking for a design refresh we are confident you will be pleased with the results.</p></div>
         </div>
     </div>
   </div>
 </div>
+<footer class="page-footer font-small blue pt-4"></footer>
+<div class="footer-copyright text-center py-3">© 2018 Copyright - URL
+</footer>
 </body>
 </html>
