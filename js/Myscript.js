@@ -43,3 +43,32 @@ function setbackground()
             e[i].style.fontFamily='comic sans'; 
           } 
         } 
+
+        function CambioTextoColor(){ 
+            var e=document.getElementsByTagName("div");  
+            var index = Math.round(Math.random() * 9);
+    
+            var ColorValue = "000000"; // default color - white (index = 0)
+            
+            if(index == 1)
+            ColorValue = "FFCCCC"; //peach
+            if(index == 2)
+            ColorValue = "CCAFFF"; //violet
+            if(index == 3)
+            ColorValue = "A6BEFF"; //lt blue
+            if(index == 4)
+            ColorValue = "99FFFF"; //cyan
+            if(index == 5)
+            ColorValue = "D5CCBB"; //tan
+            if(index == 6)
+            ColorValue = "99FF99"; //lt green
+            if(index == 7)
+            ColorValue = "FFFF99"; //lt yellow
+            if(index == 8)
+            ColorValue = "FFCC99"; //lt orange
+            if(index == 9)
+            ColorValue = "CCCCCC"; //lt grey
+            for (var i = 0; i < e.length; i++){ 
+                e[i].style.color="#" + ColorValue; 
+              } 
+            } 
